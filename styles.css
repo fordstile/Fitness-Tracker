@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    margin: 0;
+    padding: 20px;
+    color: #343a40;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d47a1;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffc107;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+main {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#intro {
+    background-color: #1976d2;
+    padding: 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.workout-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.workout-card:hover {
+    transform: scale(1.05);
+}
+
+.action-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #388e3c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #0d47a1;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#progress-info {
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 8px;
+    color: #000;
+}
