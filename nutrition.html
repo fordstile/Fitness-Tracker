@@ -23,11 +23,60 @@
         <section id="nutrition-info">
             <h2>Track Your Meals</h2>
             <form id="nutrition-form">
-                <label for="food-item">Food Item:</label>
-                <input type="text" id="food-item" required>
-                <label for="calories">Calories:</label>
-                <input type="number" id="calories" required>
-                <button type="submit">Add Food</button>
+                <!-- Food Item -->
+                <div class="form-group">
+                    <label for="food-item">Food Item:</label>
+                    <input type="text" id="food-item" name="food-item" placeholder="Enter food item" required>
+                </div>
+
+                <!-- Calories -->
+                <div class="form-group">
+                    <label for="calories">Calories:</label>
+                    <input type="number" id="calories" name="calories" placeholder="Enter calories" required>
+                </div>
+
+                <!-- Meal Type (Radio Buttons) -->
+                <div class="form-group">
+                    <p>Meal Type:</p>
+                    <label><input type="radio" name="meal-type" value="breakfast" checked> Breakfast</label>
+                    <label><input type="radio" name="meal-type" value="lunch"> Lunch</label>
+                    <label><input type="radio" name="meal-type" value="dinner"> Dinner</label>
+                </div>
+
+                <!-- Meal Category (Dropdown) -->
+                <div class="form-group">
+                    <label for="meal-category">Meal Category:</label>
+                    <select id="meal-category" name="meal-category">
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="non-vegetarian">Non-Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                    </select>
+                </div>
+
+                <!-- Ingredients (Checkboxes) -->
+                <div class="form-group">
+                    <p>Ingredients:</p>
+                    <label><input type="checkbox" name="ingredients" value="protein"> Protein</label>
+                    <label><input type="checkbox" name="ingredients" value="carbs"> Carbs</label>
+                    <label><input type="checkbox" name="ingredients" value="fats"> Fats</label>
+                </div>
+
+                <!-- Date Picker -->
+                <div class="form-group">
+                    <label for="meal-date">Meal Date:</label>
+                    <input type="date" id="meal-date" name="meal-date" required>
+                </div>
+
+                <!-- File Upload -->
+                <div class="form-group">
+                    <label for="meal-photo">Upload Meal Photo:</label>
+                    <input type="file" id="meal-photo" name="meal-photo" accept="image/*">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" id="submit-btn">Add Food</button>
+                </div>
             </form>
         </section>
     </main>
